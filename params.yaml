@@ -1,8 +1,8 @@
 # Sieu tham so cho mo hinh GradientBoostingClassifier
 # Trigger CI/CD
-n_estimators: 50
-learning_rate: 0.05
-max_depth: 2
+n_estimators: 200
+learning_rate: 0.1
+max_depth: 5
 
 # Nông và chậm
 # n_estimators: 50
