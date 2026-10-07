@@ -1,0 +1,6 @@
+[core]
+    remote = labstore
+['remote "labstore"']
+    url = s3://lab21-cicd-for-ai/dvc
+    endpointurl = https://axwfixabzvp5.compat.objectstorage.ap-singapore-1.oraclecloud.com
+    region = ap-singapore-1
