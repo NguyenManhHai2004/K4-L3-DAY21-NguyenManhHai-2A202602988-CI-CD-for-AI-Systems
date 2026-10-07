@@ -14,3 +14,5 @@ __pycache__/
 
 mlruns/
 .dvc/config.local
+
+LICH-SU-CHAT.md
