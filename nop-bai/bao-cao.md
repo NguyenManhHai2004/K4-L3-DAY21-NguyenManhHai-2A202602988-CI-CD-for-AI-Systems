@@ -13,11 +13,11 @@ HƯỚNG DẪN - đọc rồi XÓA TOÀN BỘ các khối chú thích này sau k
 
 | | |
 |---|---|
-| Họ và tên | ___ |
-| MSSV | ___ |
+| Họ và tên | Nguyễn Mạnh Hải |
+| MSSV | 2A202602988 |
 | Lớp / Khóa | K4 |
-| Repo GitHub | https://github.com/___/___ |
-| Ngày nộp | ___ |
+| Repo GitHub | https://github.com/NguyenManhHai2004/K4-L3-DAY21-NguyenManhHai-2A202602988-CI-CD-for-AI-Systems |
+| Ngày nộp | 07/10/2026 |
 
 ---
 
@@ -27,13 +27,13 @@ HƯỚNG DẪN - đọc rồi XÓA TOÀN BỘ các khối chú thích này sau k
 
 | Lần chạy | n_estimators | learning_rate | max_depth | f1_score | accuracy |
 |---|---|---|---|---|---|
-| 1 | ___ | ___ | ___ | ___ | ___ |
-| 2 | ___ | ___ | ___ | ___ | ___ |
-| 3 | ___ | ___ | ___ | ___ | ___ |
+| 1 | 100 | 0.1 | 3 | 0.7109 | 0.8780 |
+| 2 | 50 | 0.05 | 2 | 0.6051 | 0.8460 |
+| 3 | 200 | 0.1 | 5 | 0.7149 | 0.8740 |
 
-**Bộ siêu tham số đã chọn:** `n_estimators=___`, `learning_rate=___`, `max_depth=___`.
+**Bộ siêu tham số đã chọn:** `n_estimators=200`, `learning_rate=0.1`, `max_depth=5`.
 
-**Lý do:** ___
+**Lý do:** Lần 3 có f1_score cao nhất (0,7149), vượt ngưỡng 0,65 của Quality Gate, nên tôi chọn bộ này dù accuracy của nó (0,8740) không phải cao nhất. Lần chạy có accuracy cao nhất là lần 1 (0,8780), nhưng f1_score của lần 1 chỉ đạt 0,7109, nên accuracy và f1_score không trùng nhau; điều đó cho thấy accuracy khó phản ánh khả năng bắt đúng lớp thu nhập cao trên dữ liệu mất cân bằng. Lần 2 (mô hình nông, learning_rate 0,05, chỉ 50 cây) có f1_score 0,6051, thấp hơn ngưỡng, vì mô hình chưa đủ số cây và độ sâu để học tốt lớp thiểu số. Do mỗi lần chạy tôi đổi đồng thời cả ba tham số, tôi chưa tách riêng được tác động của n_estimators và learning_rate; tôi chỉ thấy rằng learning_rate nhỏ đi kèm ít cây cho kết quả kém nhất.
 
 <!--
 Trả lời trong phần Lý do:
